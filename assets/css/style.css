@@ -1,0 +1,84 @@
+:root {
+  --cor-p1: #b28756;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header e Menu inicial */
+
+header {
+  height: 100px;
+  background-color: #000;
+  color: white;
+}
+
+.header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logoimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--cor-p1);
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100px;
+  border-bottom: 4px solid transparent;
+  transition: 0.2s;
+}
+
+.menu li a:hover,
+.menu .active a {
+  border-bottom-color: var(--cor-p1);
+  color: #ccc;
+}
+
+/* Banner inicial do site */
+.banner {
+  height: calc(100vh - 100px);
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
