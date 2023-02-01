@@ -171,8 +171,6 @@ header .menu ul {
 /* Criando sections para serem reutilizadas */
 
 .default {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -356,4 +354,237 @@ header .menu ul {
 
 .section-projects > a {
   align-self: center;
+}
+
+/* our team */
+.default.dark.dark-bg {
+  background-image: url("../../assets/images/bg.jpg");
+  padding: 0;
+}
+.section-team-area {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.team {
+  overflow: hidden;
+  max-width: 880px;
+  margin: auto;
+}
+
+/* .team-list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+} */
+
+/* .team-item {
+  flex: 1 1 300px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.team-item--img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.team-item--content {
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.team-item--social-list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.team-item--social {
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.team-item--social:hover {
+  background-color: #b28756;
+}
+
+.team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.team .slide-area {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.section-team-area .sliders-pointers {
+  margin-top: 30px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-team-area .pointer {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--cor-p1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+  background-color: var(--cor-p1);
+}
+
+.team .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.team .slide {
+  width: 280px;
+  height: 100%;
+  min-height: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.team .slide-area {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* section clients */
+
+.section-clients .sliders {
+  width: 1000vw;
+  height: 100%;
+}
+
+.section-clients .slide {
+  width: 100vw;
+  height: 100%;
+  display: inline-block;
+}
+
+.section-client-img {
+  margin-bottom: 20px;
+  width: 130px;
+}
+.section-clients .slide .section-client-depoiment {
+  margin-top: 20px;
+  font-size: 0.875rem;
+  max-width: 75ch;
+  line-height: 1.4;
+}
+.section-clients .slide .section-client-depoiment img {
+  margin: 10px auto;
+}
+
+.section-clients .slide-area {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.section-clients .sliders-pointers {
+  margin-top: 30px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-clientes .pointer {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--cor-p1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section-clients .pointer.active {
+  background-color: var(--cor-p1);
+}
+
+.section-clients .sliders-pointers {
+  margin-top: 30px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section-clients .pointer {
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--cor-p1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section-clients .pointer.active {
+  background-color: var(--cor-p1);
+}
+
+/* logos */
+.logos {
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
