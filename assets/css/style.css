@@ -40,8 +40,6 @@ img {
 
 .container {
   max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,6 +56,7 @@ header {
   color: #fff;
   display: flex;
   align-items: center;
+  height: 100px;
 }
 
 .logo {
@@ -69,6 +68,9 @@ header {
   height: 80px;
   border-radius: 50%;
   background-color: var(--cor-p1);
+}
+.menu-opener {
+  display: none;
 }
 
 header .menu {
@@ -925,5 +927,170 @@ header .menu ul {
   }
   .mapa-area-info {
     width: 100%;
+  }
+}
+
+/* footer */
+
+.section-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.section-footer-social ul {
+  display: flex;
+  gap: 8px;
+  flex: 1 1 240px;
+}
+
+.section-footer-content {
+  flex: 1 1 240px;
+  color: #999;
+}
+
+.section-footer-form {
+  flex: 1 1 240px;
+  background-color: #333;
+  padding: 20px 20px 40px 20px;
+}
+
+.section-footer-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-footer-form form input:not(.button) {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+.section-footer-form form input:not(.button):focus {
+  outline: none;
+}
+
+@media (max-width: 820px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    width: 40px;
+    margin-right: 30px;
+    display: initial;
+  }
+  .menu nav {
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 70vw;
+    height: calc(100vh - 100px);
+    top: 100px;
+    right: 0;
+
+    transition: 1s;
+    display: none;
+  }
+  .menu nav ul {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .menu nav li a {
+    margin-left: 40px;
+    font-weight: bold;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+  .menu nav li.active a {
+    border: 0;
+    color: #b28756;
+  }
+  .default {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-service {
+    min-width: 45%;
+  }
+  .section-service:nth-child(odd) {
+    border-left: 0;
+  }
+  .section-service:last-child {
+    border-right: 0;
+  }
+
+  .team {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu nav {
+    width: 80vw;
+  }
+  .menu nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu nav li a {
+    height: 50px;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  .menu nav li.active a {
+    border: 0;
+    color: #b28756;
+  }
+
+  .banner .slide h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner .slide h2 {
+    font-size: 0.875rem;
+  }
+  .section-service {
+    border-left: 0;
+  }
+
+  .team {
+    width: 280px;
+  }
+
+  .logo-item {
+    width: 25%;
+  }
+
+  .section-projects ul {
+    gap: 10px;
+  }
+  .section-projects ul li:nth-child(n + 4) {
+    margin-top: 12px;
+  }
+  .section-clients .slide .section-client-depoiment {
+    max-width: 30ch;
+  }
+
+  .mapa-area,
+  .mapa {
+    padding: 0;
+  }
+  .mapa-area {
+    padding-bottom: 250px;
+  }
+  .mapa-area-info {
+    box-shadow: none;
   }
 }
